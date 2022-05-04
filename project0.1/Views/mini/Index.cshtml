@@ -1,0 +1,27 @@
+﻿@model IEnumerable<naman11.Models.employess>
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Chetu(softwere company)</h2>
+
+<table class="table table-bordered">
+    <tr>
+    <th>eid</th>
+    <th>ename</th>
+    <th>gender</th>
+    <th>salary</th>
+    <th>city</th>
+    </tr>
+    @foreach(var par in Model)
+            {
+<tr>
+    <td>@par.eid</td>
+    <td>@par.ename</td>
+    <td>@par.gender</td>
+    <td>@par.salary</td>
+    <td>@par.citys</td>
+</tr>
+            }
+</table>
